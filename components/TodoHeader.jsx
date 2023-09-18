@@ -3,7 +3,7 @@ import AvatarGroupCounter from "./AvatarGroupCounter"
 const TodoHeader = () => {
   return (
     <div className="flex flex-col gap-6 p-3 r rounded-xl bg-dark-02">
-      <div className="flex justify-between r">
+      <div className="flex justify-center md:justify-between r">
         <div className="flex gap-3">
           <div className="hidden md:block">
              <ArrowCircleLeft className="" size={38} color="#A5A5A5" weight="fill" />
@@ -27,7 +27,7 @@ const TodoHeader = () => {
             </button>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between ml-16">
+      <div className="flex flex-wrap justify-between ml-4 md:ml-16">
         <div className="flex flex-wrap gap-4">
           <AvatarGroupCounter />
           <button className="flex items-center justify-center gap-1 px-2 text-sm rounded-xl bg-secondary">

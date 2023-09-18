@@ -15,7 +15,6 @@ const Navbar = () => {
     },[])
     function toggleSlider()
     {
-        // document.querySelector("#slider").classList.toggle("hidden")
         if(toggle==true)
         {
             animate("#slider", { width: 0, opacity:0 })
