@@ -19,7 +19,7 @@ const Navbar = () => {
     }
   return (
     <nav className="flex justify-between w-full px-6 py-3 bg-dark-02">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between w-full gap-2 md:w-auto">
             <span className="text-[20px] md:mr-2 mr-5 font-semibold text-white">Weframetech</span>
             <List onClick={toggleSlider} className="cursor-pointer" size={32} color="#ffffff" weight="fill" />
         </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className="relative rounded-full bg-primary ">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                         <svg className="w-4 h-4 text-gray-500 "  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                     </div>
                     <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-white rounded-full outline-none bg-primary " placeholder="Search her..." required/>
@@ -62,13 +62,13 @@ const Navbar = () => {
                 </button> 
             </div>
             <div>
-                <select id="language" class="bg-primary hidden md:block outline-none font-semibold text-white text-sm rounded-xl   block w-full p-3">
-                    <option selected value="English">🌍ENGLISH</option>
+                <select id="language" defaultValue={'English'} className="hidden block w-full p-3 text-sm font-semibold text-white outline-none bg-primary md:block rounded-xl">
+                    <option value="English">🌍ENGLISH</option>
                     <option value="Hindi">🌍HINDI</option>
                     <option value="German">🌍GERMAN</option>
                 </select>
             </div>
-                <div className="flex gap-3"> 
+                <div className="hidden gap-3  md:flex"> 
                     <div className="flex items-center justify-center w-10 h-10 bg-white rounded-lg">
                     <div className="w-10 h-10 bg-white rounded-lg">
             
