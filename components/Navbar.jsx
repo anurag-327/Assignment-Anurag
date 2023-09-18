@@ -1,19 +1,29 @@
 import { Bell,Check,List,Briefcase,Presentation, CheckCircle } from "phosphor-react"
 import { animate } from "framer-motion"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 const Navbar = () => {
     const [toggle,setToggle]=useState(true);
+    useEffect(()=>
+    {
+        const { innerWidth: width, innerHeight: height } = window;
+        if(innerWidth<600)
+        {
+            // alert(innerWidth)
+            setToggle(false)
+            toggleSlider();
+        }
+    },[])
     function toggleSlider()
     {
         // document.querySelector("#slider").classList.toggle("hidden")
-        if(toggle)
+        if(toggle==true)
         {
-            animate("#slider", { width: 281, opacity:1 })
+            animate("#slider", { width: 0, opacity:0 })
             setToggle(!toggle)
         }
         else
         {
-            animate("#slider", { width: 0, opacity:0})
+            animate("#slider", { width: 281, opacity:1})
             setToggle(!toggle)
         }
     }
@@ -68,7 +78,7 @@ const Navbar = () => {
                     <option value="German">🌍GERMAN</option>
                 </select>
             </div>
-                <div className="hidden gap-3  md:flex"> 
+                <div className="hidden gap-3 md:flex"> 
                     <div className="flex items-center justify-center w-10 h-10 bg-white rounded-lg">
                     <div className="w-10 h-10 bg-white rounded-lg">
             
