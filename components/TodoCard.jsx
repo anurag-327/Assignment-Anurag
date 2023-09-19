@@ -13,6 +13,13 @@ const TodoCard = ({item}) => {
         Video:"text-[#5ECFFF]",
         BUGSFIXING:"text-[#FF4A55]"
     }
+    const dotColor={
+        Important:"#FFAB2D",
+        InstructorMeeting:"#E328AF",
+        Database:"#38E25D",
+        Video:"#5ECFFF",
+        BUGSFIXING:"#FF4A55"
+    }
     const defaultColor=item.color;
     const progress=item.progress;
   return (
@@ -31,7 +38,7 @@ const TodoCard = ({item}) => {
         
         <div className="flex items-center justify-between w-full">
             <div className="flex items-center justify-start gap-1 text-yellow-01">
-                <Circle className="w-[10px] h-[10px]" color="#FFAB2D" weight="fill" />
+                <Circle className="w-[10px] h-[10px]" color={dotColor[defaultColor]} weight="fill" />
                 <span className={`${color[defaultColor]}  text-sm font-semibold`}>{item.tag}</span>
             </div>
             <button onClick={()=> setOpen(true)}>
