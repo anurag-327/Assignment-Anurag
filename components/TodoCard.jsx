@@ -16,9 +16,9 @@ const TodoCard = ({item}) => {
     const defaultColor=item.color;
     const progress=item.progress;
   return (
-    <div className="w-[290px]  relative  box-border  bg-primary rounded-[14px]  p-3">
+    <div className="w-[300px] relative  box-border  bg-primary rounded-[14px]  p-3">
         {
-            open&&<div className="absolute flex flex-col justify-center items-center rounded-[14px]  w-[290px] top-0 bottom-0 right-0 left-0 bg-black opacity-90 z-50">
+            open&&<div className="absolute flex flex-col justify-center items-center rounded-[14px]  w-[300px] top-0 bottom-0 right-0 left-0 bg-black opacity-90 z-50">
                 <button className="absolute right-2 top-2" onClick={()=> setOpen(false)}>
                     <X size={30} color="#ffffff" weight="fill" />
                 </button>

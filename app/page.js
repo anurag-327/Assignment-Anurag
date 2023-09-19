@@ -7,14 +7,14 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-end min-h-screen bg-dark">
+    <main className="flex flex-col items-end min-h-screen font-cairo bg-dark">
       <Navbar />
       <Slider />
-      <div className='flex w-full :w-full md:w-[80%] flex-col gap-5 py-4'>
+      <div className='flex mb-10 overflow-hidden relative top-[56px] md:top-[71.6px] w-full :w-full md:w-[80%] flex-col gap-5 py-4'>
         <TodoHeader />
         <TodoSection />
       </div>
-      <footer className='w-full mt-5 text-center text-white'>
+      <footer className='w-full mt-5 text-center text-white '>
         <span>Made with 💖 by <a className='text-white underline' href="https://www.github.com/anurag-327">anurag-327</a></span>
       </footer>
     </main>

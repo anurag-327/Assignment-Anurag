@@ -27,7 +27,7 @@ const Navbar = () => {
         }
     }
   return (
-    <nav className="flex justify-between w-full px-6 py-3 bg-dark-02">
+    <nav className="fixed top-0 z-50 flex justify-between w-full px-6 py-3 bg-dark-02">
         <div className="flex items-center justify-between w-full gap-2 md:w-auto">
             <span className="text-[20px] md:mr-2 mr-5 font-semibold text-white">Weframetech</span>
             <List onClick={toggleSlider} className="cursor-pointer" size={32} color="#ffffff" weight="fill" />

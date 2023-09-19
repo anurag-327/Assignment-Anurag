@@ -2,7 +2,7 @@ import { List,Gauge, Envelope, Calendar, AddressBook, SquaresFour, ChatsCircle, 
 import { motion } from "framer-motion"
 const Slider = () => {
   return (
-    <motion.div id="slider"  className="absolute overflow-hidden py-3 rounded-rb-2xl flex flex-col w-[300px] min-h-[calc(100%-71.6px)]  bg-dark-02 md:w-[18%] top-[71.6px] px-2 left-0 z-50 ">
+    <motion.div id="slider"  className="fixed overflow-hidden py-3 rounded-rb-2xl flex flex-col w-[300px] min-h-[calc(100%-56px)] md:min-h-[calc(100%-74px)]  bg-dark-02 md:w-[18%] top-[56px] md:top-[71.6px] px-2 left-0 z-50 ">
         
         <div className="flex flex-col gap-4 mt-7">
             <span className="mx-5 text-sm font-bold text-white">MAIN MENU</span>

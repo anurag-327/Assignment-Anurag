@@ -6,9 +6,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'cairo': ['cairo','sans-serif'],
+    },
     fontSize: {
-      sm: ['12px', '15.07px'],
-      base: ['14px', '20px'],
+      sm: ['14px', '19.07px'],
+      base: ['18px', '20px'],
       lg: ['28px', '52.47px'],
       xl: ['24px', '32px'],
     },
