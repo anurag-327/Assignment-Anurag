@@ -5,7 +5,7 @@ import TodoList from "./TodoList"
 
 const TodoSection = () => {
   return (
-    <div className="flex flex-wrap justify-center w-full gap-4 mx-auto">
+    <div className="flex flex-wrap justify-center w-full gap-2">
       <TodoList />
       <InProgresss />
       <DoneSection />

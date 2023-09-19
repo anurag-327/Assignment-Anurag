@@ -66,7 +66,7 @@ const Slider = () => {
                 </select>
             </div>
         </div>
-        <div className="p-4 mt-10 overflow-hidden bg-blue-400 rounded-xl">
+        <div className="p-4 mt-5 overflow-hidden bg-blue-400 rounded-xl">
             <DotsNine size={45} color="#ffffff" weight="fill" />
             <span  className="text-lg font-semibold text-white">Increase your work with kanban</span>
             <ArrowRight size={20} color="#ffffff" weight="fill" />

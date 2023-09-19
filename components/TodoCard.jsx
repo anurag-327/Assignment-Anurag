@@ -3,8 +3,6 @@ import { Circle, DotsThreeOutline, Clock, X } from "phosphor-react"
 import AvatarGroup from "./AvatarGroup"
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
-// import PropTypes from 'prop-types';
-// import ProgressBar from "@ramonak/react-progress-bar";
 import { useState } from "react";
 const TodoCard = ({item}) => {
     const [open,setOpen]=useState(false);
@@ -32,9 +30,9 @@ const TodoCard = ({item}) => {
     const defaultColor=item.color;
     const progress="w-["+item.progress+"%]";
   return (
-    <div className="w-[300px] relative  box-border  bg-primary rounded-[14px]  p-3">
+    <div className="w-[280px] relative  box-border  bg-primary rounded-[14px]  p-3">
         {
-            open&&<div className="absolute flex flex-col justify-center items-center rounded-[14px]  w-[300px] top-0 bottom-0 right-0 left-0 bg-black opacity-90 z-50">
+            open&&<div className="absolute flex flex-col justify-center items-center rounded-[14px]  w-[280px] top-0 bottom-0 right-0 left-0 bg-black opacity-90 z-50">
                 <button className="absolute right-2 top-2" onClick={()=> setOpen(false)}>
                     <X size={30} color="#ffffff" weight="fill" />
                 </button>
