@@ -23,7 +23,7 @@ const Slider = () => {
             <a href="#" className="flex items-center gap-3 px-5">
                <Envelope size={26} color="#464366" weight="fill" />
                <span className="text-[#464366]">Email</span>
-               <span classNa href="#"me="flex items-center justify-center w-5 h-5 ml-5 text-sm text-white rounded-full bg-secondary">17</span>
+               <span className="flex items-center justify-center w-5 h-5 ml-5 text-sm text-white rounded-full bg-secondary">17</span>
             </a>
             <a href="#" className="flex gap-3 px-5">
                <ChatsCircle size={26} color="#7879F1" weight="fill" />
@@ -68,7 +68,7 @@ const Slider = () => {
         </div>
         <div className="p-4 mt-10 overflow-hidden bg-blue-400 rounded-xl">
             <DotsNine size={45} color="#ffffff" weight="fill" />
-            <span  className="text-base font-semibold text-white">Increase your work with kanban</span>
+            <span  className="text-lg font-semibold text-white">Increase your work with kanban</span>
             <ArrowRight size={20} color="#ffffff" weight="fill" />
             {/* <div className="bg-blue-50 absolute h-20 w-20 bottom-0 right-[-20px] rounded-full"></div> */}
         </div>
