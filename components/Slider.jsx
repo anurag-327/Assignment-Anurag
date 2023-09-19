@@ -2,7 +2,7 @@ import { List,Gauge, Envelope, Calendar, AddressBook, SquaresFour, ChatsCircle, 
 import { motion } from "framer-motion"
 const Slider = () => {
   return (
-    <motion.div id="slider"  className="fixed overflow-hidden py-3 rounded-rb-2xl flex flex-col w-[300px] min-h-[calc(100%-56px)] md:min-h-[calc(100%-74px)]  bg-dark-02 md:w-[18%] top-[56px] md:top-[71.6px] px-2 left-0 z-50 ">
+    <motion.div id="slider"  className="fixed overflow-hidden py-3 rounded-rb-2xl flex flex-col w-[300px] min-h-[calc(100%-56px)] md:min-h-[calc(100%apx)]  bg-dark-02 md:w-[18%] top-[56px] md:top-[71.6px] px-2 left-0 z-50 ">
         
         <div className="flex flex-col gap-4 mt-7">
             <span className="mx-5 text-sm font-bold text-white">MAIN MENU</span>
@@ -13,51 +13,51 @@ const Slider = () => {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                     </div>
-                    <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-white rounded-full outline-none bg-primary " placeholder="Search her..." required/>
+                    <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-white rounded-full outline-none bg-primary " placeholder="Search here..." required/>
                 </div>
             </div>
-            <div className="flex items-center gap-3 px-5 mt-4">
+            <a href="#" className="flex items-center gap-3 px-5 mt-4">
                <Gauge size={26} color="#464366" weight="fill" />
                <span className="text-[#464366]">Dashboard</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <Envelope size={26} color="#464366" weight="fill" />
                <span className="text-[#464366]">Email</span>
-               <span className="flex items-center justify-center w-5 h-5 ml-5 text-sm text-white rounded-full bg-secondary">17</span>
-            </div>
-            <div className="flex gap-3 px-5">
+               <span classNa href="#"me="flex items-center justify-center w-5 h-5 ml-5 text-sm text-white rounded-full bg-secondary">17</span>
+            </a>
+            <a href="#" className="flex gap-3 px-5">
                <ChatsCircle size={26} color="#7879F1" weight="fill" />
                <span className="text-[#7879F1]">Chat</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <SquaresFour size={26} color="#6418C3" weight="fill" />
                <span className="text-[#6418C3]">Kanban</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <AddressBook size={26} color="#7879F1" weight="fill" />
                <span className="text-[#7879F1]">Contact</span>
                <span className="flex items-center justify-center p-1 ml-5 text-sm text-white rounded-lg bg-grey-01">NEW</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <Calendar size={26} color="#7879F1" weight="fill" />
                <span className="text-[#7879F1]">Calendar</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <PresentationChart size={26} color="#464366" weight="fill" />
                <span className="text-[#7879F1]">Courses</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <Storefront size={26} color="#464366" weight="fill"/>
                <span className="text-[#7879F1]">Shop</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <Money size={26} color="#7879F1" weight="fill" />
                <span className="text-[#7879F1]">Invoices</span>
-            </div>
-            <div className="flex items-center gap-3 px-5">
+            </a>
+            <a href="#" className="flex items-center gap-3 px-5">
                <Gear size={26} color="#7879F1" weight="fill" />
                <span className="text-[#7879F1]">Settings</span>
-            </div>
+            </a>
             <div>
                 <select id="language" defaultValue={'English'} className="block w-full p-3 text-sm font-semibold text-white outline-none bg-primary md:hidden rounded-xl">
                     <option  value="English">🌍ENGLISH</option>

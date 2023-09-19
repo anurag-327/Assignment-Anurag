@@ -32,7 +32,7 @@ const Navbar = () => {
             <span className="text-[20px] md:mr-2 mr-5 font-semibold text-white">Weframetech</span>
             <List onClick={toggleSlider} className="cursor-pointer" size={32} color="#ffffff" weight="fill" />
         </div>
-        <div className="flex gap-16">
+        <div className="flex items-center gap-16">
             <div className="hidden rounded-full xl:block w-60">  
                 <div className="relative rounded-full bg-primary ">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -40,38 +40,38 @@ const Navbar = () => {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                     </div>
-                    <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-white rounded-full outline-none bg-primary " placeholder="Search her..." required/>
+                    <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-white rounded-full outline-none bg-primary " placeholder="Search here..." required/>
                 </div>
             </div>
-            <button className="hidden text-sm font-semibold underline xl:block text-secondary">OTHER MENUS</button>
+            <a hre="#" className="hidden text-sm font-semibold underline xl:block text-secondary">OTHER MENUS</a>
             <div className="items-center justify-center hidden md:flex md:gap-4">
-                <button className="relative">
+                <a href="#" className="relative">
                    <Bell size={32} color="#6418C3" weight="fill" />
-                   <div className="absolute top-[-6px] text-black font-semibold right-0 w-5 h-5 text-base  bg-blue-400 rounded-full">
-                   12
+                   <div className="absolute text-center top-[-6px] text-black font-semibold right-0 w-5 h-5 text-base  bg-blue-400 rounded-full">
+                   4
                    </div>
-                </button>
-                <button className="relative">
+                </a>
+                <a href="#" className="relative">
                 <Presentation size={32} color="#6418C3" weight="fill" />
-                   <div className="absolute top-[-6px] right-0 w-5 h-5 text-base font-semibold text-black bg-blue-400 rounded-full">
+                   <div className="absolute top-[-6px] text-center right-0 w-5 h-5 text-base font-semibold text-black bg-blue-400 rounded-full">
                    1
                    </div>
-                </button>
-                <button className="relative">
+                </a>
+                <a href="#" className="relative">
                     <CheckCircle size={32} color="#6418C3" weight="fill" />
-                   <div className="absolute top-[-6px] right-0 w-5 h-5 text-base font-semibold text-black bg-blue-400 rounded-full">
+                   <div className="absolute text-center top-[-6px] right-0 w-5 h-5 text-base font-semibold text-black bg-blue-400 rounded-full">
                    5
                    </div>
-                </button>
-                <button className="relative">
+                </a>
+                <a href="#" className="relative">
                    <Briefcase size={32} color="#6418C3" weight="fill" /> 
-                   <div className="absolute top-[-6px] right-0 w-5 h-5 text-base font-semibold text-black bg-blue-400 rounded-full">
+                   <div className="absolute text-center top-[-6px] right-0 w-5 h-5 text-base font-semibold text-black bg-blue-400 rounded-full">
                    2
                    </div>
-                </button> 
+                </a> 
             </div>
             <div>
-                <select id="language" defaultValue={'English'} className="hidden block w-full p-3 text-sm font-semibold text-white outline-none bg-primary md:block rounded-xl">
+                <select id="language" defaultValue={'English'} className="hidden w-full p-3 text-sm font-semibold text-white outline-none bg-primary md:block rounded-xl">
                     <option value="English">🌍ENGLISH</option>
                     <option value="Hindi">🌍HINDI</option>
                     <option value="German">🌍GERMAN</option>

@@ -4,10 +4,10 @@ const TodoHeader = () => {
   return (
     <div className="flex flex-col gap-6 p-3 r rounded-xl bg-dark-02">
       <div className="flex justify-center md:justify-between r">
-        <div className="flex gap-3">
-          <div className="hidden md:block">
+        <div className="flex items-center gap-3">
+          <a href="#" className="hidden md:block">
              <ArrowCircleLeft className="" size={38} color="#A5A5A5" weight="fill" />
-          </div>
+          </a>
           <div className="flex flex-col items-center justify-center text-center" >
             <h2 className="text-lg font-bold text-white">School November tasks</h2>
             <span className="text-sm text-grey-01">Created by Instructor Day on November 31,2022</span>
